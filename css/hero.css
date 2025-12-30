@@ -1,0 +1,89 @@
+/* ===============================
+   HERO
+================================ */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 8%;
+    background-color: var(--bg-dark);
+}
+
+/* CONTENEDOR PRINCIPAL */
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr; /* texto | imagen */
+    gap: 4rem;
+    align-items: center;
+}
+
+/* ===============================
+   TEXTO
+================================ */
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--text-main);
+    margin-bottom: 0.8rem;
+}
+
+.hero-text h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: 1.4rem;
+}
+
+.hero-text p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    max-width: 520px;
+}
+
+/* ===============================
+   BOTÓN CV
+================================ */
+
+.cv-btn {
+    margin-top: 2rem;
+    width: fit-content;
+    padding: 0.8rem 2.2rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--primary), #5affc6);
+    color: #000;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cv-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(90, 255, 198, 0.35);
+}
+
+/* ===============================
+   IMAGEN
+================================ */
+
+.profile-img {
+    width: 100%;
+    height: 420px;
+    border-radius: 22px;
+    object-fit: cover;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.55);
+}
