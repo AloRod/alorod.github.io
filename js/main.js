@@ -29,4 +29,10 @@ toggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
 
+/* Cerrar menú al hacer click en un link */
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+    });
+});
 
