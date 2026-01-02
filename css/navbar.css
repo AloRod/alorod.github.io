@@ -32,7 +32,7 @@
     width: 32px;
     height: 32px;
     object-fit: contain;
-    border-radius: 8px; /* opcional */
+    border-radius: 8px; 
 }
 
 .nav-links {
@@ -49,6 +49,42 @@
 
 .nav-links a:hover {
     color: var(--primary);
+}
+/* ===============================
+   NAVBAR RESPONSIVE
+================================ */
+
+.menu-toggle {
+    display: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: var(--text);
+}
+
+/* MÓVIL */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: rgba(5, 11, 18, 0.95);
+        backdrop-filter: blur(12px);
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 2rem 0;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
 }
 
 

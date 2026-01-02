@@ -1,3 +1,7 @@
+/* ===============================
+   ANIMACIÓN DE SECCIONES
+================================ */
+
 const sections = document.querySelectorAll(".section");
 
 const observer = new IntersectionObserver(entries => {
@@ -11,6 +15,18 @@ const observer = new IntersectionObserver(entries => {
 sections.forEach(section => {
     section.classList.add("hidden");
     observer.observe(section);
+});
+
+
+/* ===============================
+   NAVBAR MOBILE
+================================ */
+
+const toggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
 });
 
 
